@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-image: url(images/fishes\ backgorund.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+}
+
+main{
+    height: 90vh;
+    width: 95%;
+    display: grid;
+    grid-template-columns: 80% 20%;
+    gap: 10px;
+}
+
+
+main section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+section:nth-child(2){
+    align-items: end;
+}
+
+h2{
+    text-align: center;
+    color: white;
+    font-size: 2em;
+    text-shadow: -7px 3px 3px black;
+}
+
+input{
+    padding: 10px;
+    font-size: 20px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    border-bottom: 2px solid dodgerblue;
+    width: 100px;
+    text-align: center;
+}
+
+
+.numbers{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 10px;
+    width: 80%;
+}
+
+
+.numbers span{
+    background-color: white;
+    border: 3px solid black;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    font-size: calmp(30px,4vw,40px);
+    cursor: pointer;
+}
+
+.numbers span:active{
+    background-color: lightgrey;
+}
+
+.progress{
+    width: clamp(50px, 90%, 100px);
+    height: 100%;
+    background-color: white;
+    border: 5px solid gainsboro;
+    outline: 1px solid black;
+    border-radius: 3px;
+    position: relative;
+    overflow: hidden;
+    transition: all ease-in-out 1s;
+}
+
+
+.progress .bar{
+    position: absolute;
+    width: 100%;
+    background-color: dodgerblue;
+    height: 10%;
+    bottom: 0;
+    transition: 1s ease-in;
+}
+
+#para{
+    font-size: 25px;
+    color: black;
+    text-align: center;
+    padding: 5px;
+    border-radius: 10px;
+    margin: auto;
+    background-color: greenyellow;
+}
+/* 
+#btn{
+    padding: 20px;
+    background-color: aliceblue;
+    margin: 20px auto;
+    max-width: fit-content;
+} */
+
